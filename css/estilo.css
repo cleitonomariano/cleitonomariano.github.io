@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: aquamarine;
 }
 /* grid 960px */
 .linha{
@@ -8,6 +9,9 @@ body{
     overflow: auto;
     padding: 5px o;
 
+}
+.header{
+    background-color: aqua;
 }
 a{
     text-decoration: none;
@@ -59,4 +63,7 @@ ul{
 }
 .col12{
     width: 940px;
+}
+.footer{
+    background-color: aqua;
 }
