@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # Base project in Next.js
+=======
+>>>>>>> 3f709b34f0822953c7f787bfe353f19c19c2412a
 # Hello, i'm Cleiton Mariano 👋
 ## Frontend developer React/Next.js
 <br/>
