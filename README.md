@@ -1,4 +1,3 @@
-# Base project in Next.js
 # Hello, i'm Cleiton Mariano 👋
 ## Frontend developer React/Next.js
 <br/>
