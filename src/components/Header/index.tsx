@@ -6,14 +6,18 @@ import {
   IoLogoWhatsapp,
   IoTerminalOutline,
 } from 'react-icons/io5';
+import { useState } from 'react';
 // import { useEffect } from 'react';
 export const Header = () => {
-  const list = document.querySelectorAll('.list');
-  function activeLink() {
-    list.forEach(item => item.classList.remove('active'));
-    this.classList.add('active');
-  }
-  list.forEach(item => item.addEventListener('onClick', activeLink));
+  const [list, setList] = useState();
+  // const list = document.querySelectorAll('.list');
+
+  // function setList() {
+  //   list.forEach(item => item.classList.remove('active'));
+  //   this.classList.add('active');
+  // }
+
+  // list.forEach(item => item.addEventListener('onClick', setList));
 
   return (
     <div className={styles.container}>
@@ -24,7 +28,7 @@ export const Header = () => {
               <span className={styles.icon}>
                 <IoTerminalOutline />
               </span>
-              <span className={styles.text}>Home</span>
+              <span className={styles.text}>Portfólio</span>
             </a>
           </li>
           <li className={styles.list}>
