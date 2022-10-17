@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --background: #222327
+  --background: #222327;
+  --text: #ffffffff;
 }
 
 html,
@@ -18,6 +19,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1, h2, h3, p, span, a {
+  color: var(--text)
 }
 
 * {

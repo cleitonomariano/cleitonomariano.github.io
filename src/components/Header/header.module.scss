@@ -2,22 +2,27 @@
   margin: 0 auto;
   padding: 0;
   max-width: 1440x;
-  height: 80px;
-  background: rgb(112, 103, 103);
-  margin-top: 150px;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  // position: fixed;
+  // z-index: 1;
+  // background: rgb(112, 103, 103);
+  // margin-top: 150px;
 }
 
 .navigation {
   margin: 0 auto;
-  width: 400px;
+  width: 100%;
   height: 70px;
   background: #fff;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   border-radius: 10px;
   align-self: center;
+  padding-right: 100px;
 }
 .navigation ul {
   display: flex;
@@ -50,8 +55,8 @@
   transition: 0.5s;
   color: var(--background);
 }
-.navigation ul li.active a .icon {
-  transform: translateY(-35px);
+.navigation ul li:hover a .icon {
+  transform: translateY(35px);
 }
 
 .navigation ul li a .text {
@@ -61,23 +66,27 @@
   font-size: 0.75em;
   letter-spacing: 0.1em;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(-20px);
 }
 
-.navigation ul li.active a .text {
+.navigation ul li:hover a .text {
   opacity: 1;
-  transform: translateY(10px);
-  transition: 2s;
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
 .indicator{
   position: absolute;
-  top: -40px;
+  bottom: -40px;
   height: 70px;
   width: 70px;
   background: #29fd53;
   border-radius: 50%;
   border: 6px solid var(--background);
   transition: 0.5s;
+  opacity: 0;
+}
+.navigation:hover .indicator {
+  opacity: 1;
 }
 .indicator::before{
   content: '';
@@ -87,7 +96,7 @@
   width: 20px;
   height: 20px;
   background: transparent;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 20px ;
   box-shadow: 0px -10px 0 0 var(--background) ;
 }
 .indicator::after{
@@ -98,6 +107,21 @@
   width: 20px;
   height: 20px;
   background: transparent;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   box-shadow: 0px -10px 0 0 var(--background) ;
+}
+.navigation ul li:nth-child(1):hover ~ .indicator{
+  transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2):hover ~ .indicator{
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3):hover ~ .indicator{
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4):hover ~ .indicator{
+  transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5):hover ~ .indicator{
+  transform: translateX(calc(70px * 4));
 }

@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Header />
       <div>
-        <h1>Olá Dev!</h1>
+        <h1>Cleiton Mariano!</h1>
       </div>
     </>
   );
